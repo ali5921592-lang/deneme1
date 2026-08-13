@@ -56,7 +56,6 @@ class _SleepifyShellState extends State<SleepifyShell> with WidgetsBindingObserv
 
     _controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..setMediaPlaybackRequiresUserGesture(false)   // atmosfer videosu kendiliğinden oynasın
       ..setBackgroundColor(const Color(0xFF0C0A24))
       ..addJavaScriptChannel('Sleepify', onMessageReceived: _onWebMessage)
       ..setNavigationDelegate(
